@@ -1,12 +1,12 @@
 Incoming JMSCorrelationID is passed along when useMessageIDAsCorrelationID
 
-'''
+```
 +-+            +-+            +-+
 | | +-> Q1 +-> | | +-> Q3 +-> | |
 |A|            |B|            |C|
 | | <-+ Q2 <-+ | | <-+ Q4 <-+ | |
 +-+            +-+            +-+
-'''
+```
 
 JMS request goes from A to B to C and the reply back from C to B to A.
 
