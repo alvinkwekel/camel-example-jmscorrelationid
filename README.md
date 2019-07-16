@@ -10,9 +10,9 @@ Incoming JMSCorrelationID is passed along when useMessageIDAsCorrelationID
 
 JMS request goes from A to B to C and the reply back from C to B to A.
 
-A useMessageIDAsCorrelationID=false
-B useMessageIDAsCorrelationID=true
-C useMessageIDAsCorrelationID=false
+* A useMessageIDAsCorrelationID=false
+* B useMessageIDAsCorrelationID=true
+* C useMessageIDAsCorrelationID=false
 
 The JMSCorrelationID assigned by A is passed along to C via Camel message headers when useMessageIDAsCorrelationID is set on B's request.
 B is expecting the JMSMessageID to be used as JMSCorrelationID on the reply but since the JMSCorrelationID
